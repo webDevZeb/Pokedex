@@ -13,7 +13,7 @@
   text-align: center;
   padding: 20px;
   margin: 10px;
-  background-color: #f1f1f1;
+
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   min-height: 200px;
@@ -120,4 +120,21 @@ button.abilities-btn:hover {
 .input-box {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
+}
+
+.pokeball {
+  animation-name: spin-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 5rem;
+}
+
+@keyframes spin-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -50,7 +50,16 @@ function App() {
   )
 
   if (loading === true) {
-    return <h1>Loading...</h1>
+    return (
+      <div>
+        <h1>Loading...</h1>
+        <img
+          className="pokeball"
+          src="src/assets/Daco_4057186.png"
+          alt="pokeball"
+        />
+      </div>
+    )
   }
 
   return (
