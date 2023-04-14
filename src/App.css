@@ -17,7 +17,7 @@
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   min-height: 200px;
-  background-image: url('src/assets/pokemonbackground.jpeg');
+  background-image: url('/Users/zebgambill/Code/Pokedex/src/assets/pokemonbackground.jpeg');
 }
 
 .pokemon-grid img {

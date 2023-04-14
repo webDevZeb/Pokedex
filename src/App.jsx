@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import pokeballImage from '/Users/zebgambill/Code/Pokedex/src/assets/Daco_4057186.png'
+import pokedexText from '/Users/zebgambill/Code/Pokedex/src/assets/pokedeximg.webp'
 
 import './App.css'
 
@@ -8,6 +10,7 @@ function App() {
   const [first150Pokemon, setFirst150Pokemon] = useState([])
   const [searchInput, setSearchInput] = useState('')
   const [showData, setShowData] = useState(null)
+  const [currentPage, setCurrentPage] = useState(1)
 
   const fetchPokemon = async () => {
     const pokemonArray = []
@@ -53,11 +56,7 @@ function App() {
     return (
       <div>
         <h1>Loading...</h1>
-        <img
-          className="pokeball"
-          src="src/assets/Daco_4057186.png"
-          alt="pokeball"
-        />
+        <img className="pokeball" src={pokeballImage} alt="pokeball" />
       </div>
     )
   }
@@ -65,7 +64,7 @@ function App() {
   return (
     <div className="pokedex">
       <h1>
-        <img src="src/assets/pokedeximg.webp" alt="pokedex text" />
+        <img src={pokedexText} alt="pokedex text" />
       </h1>
       <input
         type="text"
